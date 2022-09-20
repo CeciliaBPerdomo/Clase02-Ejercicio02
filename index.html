@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Awesome -->
+    <script src="https://kit.fontawesome.com/eff67208c4.js" crossorigin="anonymous"></script>
+
+    <title>Create a HTML5 form</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card text-center">
+            <!-- Titulo -->
+            <div class="card-header">
+                <h3 class="text-start">Payment form example</h3>
+            </div>
+
+            
+            <!-- Formulario -->
+            <div class="card-body">
+                <div class="container text-center">
+                    <div class="col bg-danger bg-opacity-25 rounded">
+                        <div class="h4 pb-2 mb-4 text-danger border border-danger rounded">
+                            Some fields are missing
+                        </div>  
+                    </div>
+
+                    <div class="row">
+                        <!-- Card / CVC / Amount -->
+                        <div class="col">
+                            <div class="mb-5">
+                                <label for="exampleInputEmail1" class="form-label d-flex justify-content-start">Card#</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label d-flex justify-content-start">CVC#</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="mb-4">
+                                <label for="exampleInputEmail1" class="form-label d-flex justify-content-start">Amount#</label>
+                                <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- First / Last Name -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-6">
+                                <label for="exampleInputEmail1" class="form-label d-flex justify-content-start">First Name</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="mb-6">
+                                <label for="exampleInputEmail1" class="form-label d-flex justify-content-start">Last Name</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <!-- City / State / Postal -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label d-flex justify-content-start">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label d-flex justify-content-start">State</label>
+                            <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label d-flex justify-content-start">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <!-- Tarjetas / Mensajes -->
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="mb-6">
+                                <label for="exampleInputEmail1" class="form-label d-flex justify-content-start">We accept</label>
+                            </div>
+
+                            <div class="border border-secondary bg-secondary">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex"></i></i></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="mb-6 ">
+                                <label for="exampleInputEmail1" class="form-label d-flex justify-content-start">Comentarios</label>
+                                <textarea class="form-control d-flex justify-content-end" placeholder="Leave a comment here" id="floatingTextarea2" style="height:100px"></textarea>
+                                <h6 class="d-flex justify-content-start">Add any notes here</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+                <!-- Botones -->
+                <div class="card-footer d-flex justify-content-end d-grid gap-3">
+                    <a href="#" class="btn btn-secondary">Cancel</a>
+                    <a href="#" class="btn btn-primary">Send</a>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
